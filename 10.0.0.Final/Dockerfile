@@ -21,3 +21,5 @@ COPY ./hibernate.module.xml /opt/jboss/wildfly/modules/system/layers/base/org/hi
 copy ./standalone.xml /opt/jboss/wildfly/standalone/configuration/standalone.xml
 
 EXPOSE 9990
+
+CMD ["/opt/jboss/wildfly/bin/standalone.sh", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0"]
