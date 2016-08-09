@@ -1,0 +1,18 @@
+language: bash
+services: docker
+
+env:
+  - VERSION=10.0.0.Final
+
+before_script:
+  - env | sort
+  - cd "$VERSION"
+  - image="wildfly-spatial:$VERSION"
+
+script:
+  - docker build -t "$image" .
+
+after_script:
+  - docker images
+
+# vim:set et ts=2 sw=2:
