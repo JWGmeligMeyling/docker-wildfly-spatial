@@ -18,5 +18,6 @@ RUN curl http://central.maven.org/maven2/org/hibernate/hibernate-spatial/5.0.7.F
 COPY ./mysql.module.xml /opt/jboss/wildfly/modules/com/mysql/main/module.xml
 COPY ./postgres.module.xml /opt/jboss/wildfly/modules/org/postgresql/main/module.xml
 COPY ./hibernate.module.xml /opt/jboss/wildfly/modules/system/layers/base/org/hibernate/main/module.xml
+copy ./standalone.xml /opt/jboss/wildfly/standalone/configuration/standalone.xml
 
 EXPOSE 9990
