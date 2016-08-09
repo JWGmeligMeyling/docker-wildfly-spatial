@@ -35,8 +35,6 @@
     </resources>
 
     <dependencies>
-        <module name="org.postgresql"/>
-        <module name="com.mysql"/>
         <module name="org.slf4j"/>
         <module name="asm.asm"/>
         <module name="com.fasterxml.classmate"/>
